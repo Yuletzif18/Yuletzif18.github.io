@@ -1,0 +1,138 @@
+
+body{
+display: block;
+justify-content: center;
+font-family: 'Montserrat', sans-serif;
+scroll-behavior: smooth;
+background-image: url("img/background2.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+box-sizing: border-box;
+
+}
+
+header {
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.nombre {
+    font-family:fantasy;
+    font-weight: bold;
+    font-size: 15px;
+    color: red;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 45%;
+    padding: 1%;
+    background-color: bisque;
+    border-color: blueviolet;
+}
+
+h3{
+    text-align:left;
+    color: rgba(8, 124, 249, 0.984);
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+  
+ul li {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.img-principal {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 60%;
+    
+    
+}
+
+
+.pokeball_button {
+    width: 100px;
+    height: 50px;
+    max-width: fit-content;
+}
+
+
+.img_pokemon {
+    display: none;
+    width: 200px;
+    height: 180px;
+    transition: transform 0.5s;
+    animation: spin 0.5s linear forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8%;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: translateX(-100%)  rotate(0deg);
+    }
+    100% {
+      transform: translateX(-100%)  rotate(360deg);
+    }
+  }
+.pokemon_pokebola:hover .img_pokemon {
+    display: block;
+    transform: translateX(10px);
+}
+
+.h2-animation {
+    animation: moveUp 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes moveUp {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .img-flip {
+    transform: scaleX(-1);
+  }
+
+/* Valores predeterminados del navegador*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 90px
+}
